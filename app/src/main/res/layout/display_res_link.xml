@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/linkTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LINK:"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/linkView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linkTxt"
+        android:autoLink="all"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/resTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REASON: "
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/linkView"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/resView"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/resTxt"/>
+
+</RelativeLayout>
